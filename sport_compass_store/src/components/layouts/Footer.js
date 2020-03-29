@@ -1,0 +1,33 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+
+export default function Footer() {
+    return (
+        <footer style={footerStyle}>
+            <Link to='/about' style={linkStyle}>About</Link>
+        </footer>
+    )
+}
+
+const footerStyle = {
+    backgroundColor: '#0d0d0d',
+    overflow: 'hidden',
+    borderTop: '1.5px solid #d9d9d9',
+    borderRadius: '2px',
+    width: '100%',
+    position: 'fixed',
+    bottom: '0px',
+    padding: '0px'
+}
+
+const linkStyle = {
+    color: 'white',
+    textAlign: 'center',
+    padding: '0.5em 1em',
+    marginLeft: '1em',
+    float: 'left',
+    textDecoration: 'none',
+    fontSize: '18px',
+    fontFamily: "Raleway, 'sans-serif'"
+
+}
