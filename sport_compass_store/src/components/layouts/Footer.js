@@ -24,10 +24,10 @@ const linkStyle = {
     color: 'white',
     textAlign: 'center',
     padding: '0.5em 1em',
+    paddingLeft: '50px',
     marginLeft: '1em',
     float: 'left',
     textDecoration: 'none',
     fontSize: '18px',
     fontFamily: "Raleway, 'sans-serif'"
-
 }

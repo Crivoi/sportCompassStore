@@ -1,0 +1,43 @@
+{
+    "vinyls": [
+        {
+          "id": 1,
+          "artistName": "Artist Test 1",
+          "albumName": "Album Test 1"
+        },
+        {
+          "id": 2,
+          "artistName": "Artist Test 2",
+          "albumName": "Album Test 2"
+        },
+        {
+          "id": 3,
+          "artistName": "Artist Test 3",
+          "albumName": "Album Test 3"
+        },
+        {
+          "id": 4,
+          "artistName": "Artist Test 4",
+          "albumName": "Album Test 4"
+        },
+        {
+          "id": 5,
+          "artistName": "Artist Test 5",
+          "albumName": "Album Test 5"
+        },
+        {
+          "id": 6,
+          "artistName": "Artist Test 6",
+          "albumName": "Album Test 6"
+        },{
+          "id": 7,
+          "artistName": "Artist Test 7",
+          "albumName": "Album Test 7"
+        },
+        {
+          "id": 8,
+          "artistName": "Artist Test 8",
+          "albumName": "Album Test 8"
+        }
+    ]
+}
