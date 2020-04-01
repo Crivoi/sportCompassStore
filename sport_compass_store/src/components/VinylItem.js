@@ -1,18 +1,31 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import defaultImg from './img/default.jpg';
-import './image.css'
+import './default.css'
 
-export class VinylItem extends Component {
+class VinylItem extends Component {
     render() {
-        const { id, artistName, albumName } = this.props.vinyl;
+        const { artistName, albumName, artwork } = this.props.vinyl;
+        const vinylImg = `/img/${artwork}`;
         return (
             <div className='vinylItem' style={vinylStyle}>
-                <img src={defaultImg} alt='default_vinyl_img' className='vinylImg' />
+                <img src={vinylImg} 
+                    onError={(e) => {
+                        e.target.onError=null;
+                        e.target.src='/img/default.jpg';
+                    }}
+                    alt='vinylImg'
+                    className='vinylImg'
+                />
                 <p>
-                    {id} : {artistName} - {albumName}
+                    {artistName} - {albumName}
                 </p>
+                <button className='appBtn' 
+                    style={addToCartBtnStyle}
+                    onClick={this.props.addToCart.bind(this, this.props.vinyl)}
+                >
+                    Add To Cart
+                </button>
             </div>
         )
     }
@@ -21,7 +34,15 @@ export class VinylItem extends Component {
 const vinylStyle = {
     position: 'relative',
     padding: '30px 10px 10px 10px',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontSize: '18px'
+}
+
+const addToCartBtnStyle = {
+    fontFamily: 'Raleway, sans-serif',
+    borderRadius: '8px',
+    border: '2px solid #d9d9d9',
+    padding: '5px 5px',
 }
 
 VinylItem.propTypes = {

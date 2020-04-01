@@ -8,11 +8,11 @@ export default function Header() {
     return (
         <header style={navStyle}>
                 <Link to='/' style={homeStyle}>
-                    <img src={logo} alt='logo' style={navImgStyle} /> 
+                    <img src={logo} alt='logoImg' style={navImgStyle} /> 
                     Home
                 </Link>                
                 <Link to='/cart' style={cartStyle}>
-                    <img src={cart} alt='cart' style={navImgStyle} />
+                    <img src={cart} alt='cartImg' style={navImgStyle} />
                     Cart
                 </Link>
         </header>

@@ -1,0 +1,36 @@
+.vinylImg{
+    width: 150px;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}    
+
+.vinylImg:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.cartImg{
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    left: 4em;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}    
+
+.cartImg:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.appBtn:hover{
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.appBtn:active{
+    background-color: #bfbfbf;
+    cursor: pointer;
+}

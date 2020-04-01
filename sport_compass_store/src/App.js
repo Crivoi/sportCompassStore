@@ -13,7 +13,15 @@ import './index.css';
 
 class App extends Component {
   state = {
-    vinyls: []
+    vinyls: [],
+    cart: []
+  }
+
+  addToCart = (vinyl) => {
+    console.log(`Added ${vinyl.id} to cart.`);
+    this.setState({
+      cart: [...this.state.cart, vinyl]
+    });
   }
 
   render() {
@@ -22,8 +30,8 @@ class App extends Component {
         <div className='App'>
           <div className='container'>
             <Header />
-            <Route exact path='/' component={Main} />
-            <Route path='/cart' component={Cart} />
+            <Route exact path='/' component={(props) => <Main {...props} addToCart={this.addToCart} />} />
+            <Route path='/cart' component={(props) => <Cart {...props} cartItems={this.state.cart} />} />
             <Route path='/about' component={About} />
             <Footer />
           </div>

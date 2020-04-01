@@ -6,7 +6,7 @@ class Vinyls extends Component {
     render() {
         return (
             this.props.vinyls.map(vinyl => (
-                <VinylItem key={vinyl.id} vinyl={vinyl} />
+                <VinylItem key={vinyl.id} vinyl={vinyl} addToCart={this.props.addToCart} />
             ))
         )
     }

@@ -3,41 +3,50 @@
         {
           "id": 1,
           "artistName": "Artist Test 1",
-          "albumName": "Album Test 1"
+          "albumName": "Album Test 1",
+          "labelName": "Label Test 1",
+          "price": "10",
+          "artwork": "default.jpg"
         },
         {
           "id": 2,
           "artistName": "Artist Test 2",
-          "albumName": "Album Test 2"
+          "albumName": "Album Test 2",
+          "labelName": "Label Test 2",
+          "price": "10",
+          "artwork": "default.jpg"
         },
         {
           "id": 3,
           "artistName": "Artist Test 3",
-          "albumName": "Album Test 3"
+          "albumName": "Album Test 3",
+          "labelName": "Label Test 3",
+          "price": "10",
+          "artwork": "deflt.jpg"
         },
         {
           "id": 4,
           "artistName": "Artist Test 4",
-          "albumName": "Album Test 4"
+          "albumName": "Album Test 4",
+          "labelName": "Label Test 4",
+          "price": "10",
+          "artwork": "default.jpg"
         },
         {
           "id": 5,
           "artistName": "Artist Test 5",
-          "albumName": "Album Test 5"
+          "albumName": "Album Test 5",
+          "labelName": "Label Test 5",
+          "price": "10",
+          "artwork": "default.jpg"
         },
         {
           "id": 6,
           "artistName": "Artist Test 6",
-          "albumName": "Album Test 6"
-        },{
-          "id": 7,
-          "artistName": "Artist Test 7",
-          "albumName": "Album Test 7"
-        },
-        {
-          "id": 8,
-          "artistName": "Artist Test 8",
-          "albumName": "Album Test 8"
+          "albumName": "Album Test 6",
+          "labelName": "Label Test 6",
+          "price": "10",
+          "artwork": "default.jpg"
         }
     ]
 }
