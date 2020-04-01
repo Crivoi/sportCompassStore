@@ -2,51 +2,99 @@
     "vinyls": [
         {
           "id": 1,
-          "artistName": "Artist Test 1",
-          "albumName": "Album Test 1",
-          "labelName": "Label Test 1",
+          "artistName": "Chrivu",
+          "albumName": "Music Brought Me Here",
+          "labelName": "MDT001 | Midas Touch",
           "price": "10",
-          "artwork": "default.jpg"
+          "artwork": "chrivu_mdt001.jpg"
         },
         {
           "id": 2,
-          "artistName": "Artist Test 2",
-          "albumName": "Album Test 2",
-          "labelName": "Label Test 2",
-          "price": "10",
-          "artwork": "default.jpg"
+          "artistName": "Hipp",
+          "albumName": "Look Ahead",
+          "labelName": "OTO004 | Otomoji",
+          "price": "9",
+          "artwork": "hipp_oto004.jpg"
         },
         {
           "id": 3,
-          "artistName": "Artist Test 3",
-          "albumName": "Album Test 3",
-          "labelName": "Label Test 3",
-          "price": "10",
-          "artwork": "deflt.jpg"
+          "artistName": "Vlad Arapasu",
+          "albumName": "Atipic Lab 05",
+          "labelName": "AtipicLab05 | AtipicLab",
+          "price": "11",
+          "artwork": "vlad_arapasu_atipic005.jpg"
         },
         {
           "id": 4,
-          "artistName": "Artist Test 4",
-          "albumName": "Album Test 4",
-          "labelName": "Label Test 4",
-          "price": "10",
-          "artwork": "default.jpg"
+          "artistName": "Macarie",
+          "albumName": "Play By Play",
+          "labelName": "CDW003 | Cedesciu Wax",
+          "price": "11",
+          "artwork": "macarie_cdw003.jpg"
         },
         {
           "id": 5,
-          "artistName": "Artist Test 5",
-          "albumName": "Album Test 5",
-          "labelName": "Label Test 5",
+          "artistName": "Vlad Arapasu",
+          "albumName": "Kontent 001",
+          "labelName": "KNTNT001 | Kontent",
           "price": "10",
-          "artwork": "default.jpg"
+          "artwork": "vlad_arapasu_knt001.jpg"
         },
         {
           "id": 6,
-          "artistName": "Artist Test 6",
-          "albumName": "Album Test 6",
-          "labelName": "Label Test 6",
+          "artistName": "Zenk & Direkt",
+          "albumName": "Lunar Club | Flush",
+          "labelName": "MCRB004 | Micro Orbit",
+          "price": "12",
+          "artwork": "zenk_direkt_mcrb004.jpg"
+        },
+        {
+          "id": 7,
+          "artistName": "Sonohat",
+          "albumName": "Whispers",
+          "labelName": "CDW001 | Cedesciu Wax",
           "price": "10",
-          "artwork": "default.jpg"
+          "artwork": "sonohat_cdw001.jpg"
+        },
+        {
+          "id": 8,
+          "artistName": "Leanca & Sonohat",
+          "albumName": "Paprika Express",
+          "labelName": "ALTH001 | Alter Hour",
+          "price": "12",
+          "artwork": "sonohat_leanca_alth001.jpg"
+        },
+        {
+          "id": 9,
+          "artistName": "Vlad Arapasu",
+          "albumName": "Vesica Piscis",
+          "labelName": "UNIC04 | Unic",
+          "price": "11",
+          "artwork": "vlad_arapasu_unic004.jpg"
+        },
+        {
+          "id": 10,
+          "artistName": "Unknown Artist",
+          "albumName": "Unknown",
+          "labelName": "UNK001 | Unknown",
+          "price": "10",
+          "artwork": "this_image_does_not_exist.jpg"
+        },
+        {
+          "id": 11,
+          "artistName": "Unknown Artist",
+          "albumName": "Unknown",
+          "labelName": "UNK002 | Unknown",
+          "price": "10",
+          "artwork": "this_image_does_not_exist.jpg"
+        },
+        {
+          "id": 12,
+          "artistName": "Unknown Artist",
+          "albumName": "Unknown",
+          "labelName": "UNK003 | Unknown",
+          "price": "10",
+          "artwork": "this_image_does_not_exist.jpg"
         }
     ]
 }

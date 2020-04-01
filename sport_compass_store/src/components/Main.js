@@ -18,7 +18,7 @@ class Main extends Component {
     }
     
     componentDidMount() {
-      const data = vinylData.vinyls.slice(0, 6);
+      const data = vinylData.vinyls;
       this.setState({
         vinyls: data,
       });
@@ -57,7 +57,7 @@ const vinylsContainerStyle = {
   border: '1px solid #d9d9d9',
   borderRadius: '8px',
   background: ' #f2f2f2',
-  gridTemplateColumns: '1fr 1fr 1fr',
+  gridTemplateColumns: '1fr 1fr 1fr 1fr',
   top: '100px'
 }
 
