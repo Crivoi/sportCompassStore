@@ -14,13 +14,41 @@ import './index.css';
 class App extends Component {
   state = {
     vinyls: [],
-    cart: []
+    cart: [],
+    top: '-100px'
   }
 
+  cartID = 1;
+
   addToCart = (vinyl) => {
-    console.log(`Added ${vinyl.id} to cart.`);
+    let newVinylInfo = {...vinyl, cartID: this.cartID++}
     this.setState({
-      cart: [...this.state.cart, vinyl]
+      cart: [...this.state.cart, newVinylInfo]
+    });
+    this.showNotification();
+  }
+
+  showNotification = () => {
+    this.setState({
+      top: '0px'
+    }, () => {
+      setTimeout(() => {
+        this.setState({
+          top: '-100px'
+        });
+      }, 1500);
+    })
+  }
+
+  checkOut = () => {
+    this.setState({
+        cart: []
+    });
+  }
+
+  removeVinyl = (id) => {
+    this.setState({
+        cart: [...this.state.cart.filter(vinyl => vinyl.cartID !== id)]
     });
   }
 
@@ -30,8 +58,10 @@ class App extends Component {
         <div className='App'>
           <div className='container'>
             <Header />
-            <Route exact path='/' component={(props) => <Main {...props} addToCart={this.addToCart} />} />
-            <Route path='/cart' component={(props) => <Cart {...props} cartItems={this.state.cart} />} />
+            <Route exact path='/' component={(props) => <Main {...props} addToCart={this.addToCart} top={this.state.top} />} />
+            <Route path='/cart' component={(props) =>
+              <Cart {...props} cart={this.state.cart} checkOut={this.checkOut} removeVinyl={this.removeVinyl} /> }
+            />
             <Route path='/about' component={About} />
             <Footer />
           </div>

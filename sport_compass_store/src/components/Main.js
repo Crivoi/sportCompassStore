@@ -11,10 +11,11 @@ const vinylData = vinylDB;
 
 class Main extends Component {
     state = {
-        vinyls: [],
-        loading: false,
-        currentPage: 1,
-        postsPerPage: 6
+        vinyls: []
+    }
+
+    notifStyle = {
+      top: this.props.top,   
     }
     
     componentDidMount() {
@@ -27,9 +28,10 @@ class Main extends Component {
     render() {
         return (
           <div>
+            <div style={this.notifStyle} className='notif'>Added item to cart</div>
             <div className="mainAbout" style={mainAbout}>
               <h2>Vinyl Market</h2>
-              <p>
+              <p id='aboutText'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel sagittis ligula, gravida lobortis purus. 
                 Etiam suscipit nulla a mollis pretium. Aliquam facilisis nunc ipsum, vitae malesuada arcu dapibus nec. 
                 Vivamus tincidunt vitae neque sit amet viverra. Cras non bibendum libero. Fusce semper mollis faucibus. 
@@ -37,10 +39,10 @@ class Main extends Component {
               <form action='/' className='searchForm' style={searchFormStyle}>
                 <img src={searchImg} alt='searchImg' style={searchImgStyle} />
                 <input type='text' placeholder='Search for a record...' style={searchInputStyle} />
-                <button type='submit' className='appBtn' style={searchBtnStyle}>Search</button>
+                <button type='submit' className='appBtn' id='searchBtn' style={searchBtnStyle}>Search</button>
               </form>
             </div>
-            <div className="vinylsContainer" style={vinylsContainerStyle}>
+            <div className="vinylsContainer"  style={vinylsContainerStyle}>
                 <Vinyls vinyls={this.state.vinyls} addToCart={this.props.addToCart} />
             </div>  
           </div>
@@ -102,4 +104,3 @@ const searchBtnStyle = {
 }
 
 export default Main;
-

@@ -9,27 +9,16 @@ class Cart extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.cartItems);
+        // console.log(this.props.cart);
         this.setState({
-            cart: this.props.cartItems
+            cart: this.props.cart
         });
-    }
-
-    removeVinyl = (id) => {
-        this.setState({
-            cart: [...this.state.cart.filter(vinyl => vinyl.id !== id)]
-        });
-    }
-
-    checkOut = () => {
-        this.setState({
-            cart: []
-        });
+        console.log(this.state.cart);
     }
 
     computeCost = () => {
         let totalCost = 0;
-        this.state.cart.forEach(vinyl => totalCost += parseInt(vinyl.price));
+        this.state.cart.forEach(vinyl => totalCost += parseFloat(vinyl.price));
         return totalCost;
     }
 
@@ -37,13 +26,13 @@ class Cart extends Component {
         return (
             <div className='cartContainer' style={cartContainerStyle}>
                 {this.state.cart.map(vinyl => (
-                    <CartItem key={vinyl.id} vinyl={vinyl} removeVinyl={this.removeVinyl}/>
+                    <CartItem key={vinyl.cartID} vinyl={vinyl} removeVinyl={this.props.removeVinyl}/>
                 ))}
                 <div className='checkoutWrapper' style={checkoutWrapperStyle}>
                     <p className='subtotal' >Subtotal: {this.computeCost()}&euro;</p>
                     <button className='appBtn' 
                         style={checkoutBtnStyle}
-                        onClick={this.checkOut}
+                        onClick={this.props.checkOut}
                     >
                         Checkout
                     </button>
@@ -61,7 +50,6 @@ const cartContainerStyle = {
     border: '1px solid #d9d9d9',
     borderRadius: '8px',
     background: ' #f2f2f2',
-    gridTemplateColumns: '1fr 1fr 1fr',
     top: '100px',
     padding: '2em',
 }

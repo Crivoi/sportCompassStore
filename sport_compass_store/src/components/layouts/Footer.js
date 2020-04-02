@@ -17,7 +17,8 @@ const footerStyle = {
     width: '100%',
     position: 'fixed',
     bottom: '0px',
-    padding: '0px'
+    padding: '0px',
+    zIndex: '998'
 }
 
 const linkStyle = {

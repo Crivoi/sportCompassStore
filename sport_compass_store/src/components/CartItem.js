@@ -5,13 +5,13 @@ import './default.css';
 
 class CartItem extends Component {
     render() {
-        const { id, artistName, albumName, labelName, artwork, price } = this.props.vinyl;
+        const { artistName, albumName, labelName, artwork, price, cartID } = this.props.vinyl;
         const vinylImg = `/img/${artwork}`;
         return (
-            <div className='container' style={cartItemStyle}>
+            <div className='cartItemContainer' style={cartItemStyle}>
                 <img src={vinylImg}
                     onError={(e) => {
-                        e.tartget.onError=null;
+                        e.target.onError=null;
                         e.target.src='/img/default.jpg';
                     }}
                     alt='vinylImage' 
@@ -25,9 +25,10 @@ class CartItem extends Component {
                     <p style={pStyle}>Price: {price}&euro;</p>
                 </div>
 
-                <button className="removeBtn" 
+                <button className='appBtn'
+                    id='removeBtn'
                     style={removeBtnStyle} 
-                    onClick={this.props.removeVinyl.bind(this, id)}
+                    onClick={this.props.removeVinyl.bind(this, cartID)}
                 >   
                     Remove from cart
                 </button>

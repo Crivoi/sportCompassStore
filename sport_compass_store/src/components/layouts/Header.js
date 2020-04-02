@@ -4,14 +4,16 @@ import { Link } from 'react-router-dom';
 import logo from './layouts_img/logo.png';
 import cart from './layouts_img/cart.png';
 
+import './layouts.css';
+
 export default function Header() {
     return (
-        <header style={navStyle}>
-                <Link to='/' style={homeStyle}>
+        <header style={navStyle} className='navHeader'>
+                <Link to='/' className='homeLink' style={homeStyle}>
                     <img src={logo} alt='logoImg' style={navImgStyle} /> 
                     Home
                 </Link>                
-                <Link to='/cart' style={cartStyle}>
+                <Link to='/cart' className='cartLink' style={cartStyle}>
                     <img src={cart} alt='cartImg' style={navImgStyle} />
                     Cart
                 </Link>
@@ -27,7 +29,7 @@ const navStyle = {
     width: '100%',
     position: 'fixed',
     top: '0px',
-    zIndex: '999'
+    zIndex: '998'
 }
 
 const homeStyle = {

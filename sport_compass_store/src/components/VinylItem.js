@@ -14,7 +14,7 @@ class VinylItem extends Component {
                         e.target.onError=null;
                         e.target.src='/img/default.jpg';
                     }}
-                    alt='vinylImg'
+                    alt='vinylImage'
                     className='vinylImg'
                 />
                 <p>
