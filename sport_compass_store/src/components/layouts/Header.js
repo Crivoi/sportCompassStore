@@ -9,11 +9,11 @@ import './layouts.css';
 export default function Header() {
     return (
         <header style={navStyle} className='navHeader'>
-                <Link to='/' className='homeLink' style={homeStyle}>
+                <Link to='/' className='link' id='homeLink' style={homeStyle}>
                     <img src={logo} alt='logoImg' style={navImgStyle} /> 
                     Home
                 </Link>                
-                <Link to='/cart' className='cartLink' style={cartStyle}>
+                <Link to='/cart' className='link' id='cartLink' style={cartStyle}>
                     <img src={cart} alt='cartImg' style={navImgStyle} />
                     Cart
                 </Link>

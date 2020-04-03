@@ -3,8 +3,12 @@
         height: 10% !important;
     }
 
-    .cartLink {
+    #cartLink {
         position: relative !important;
+    }
+
+    .link {
+        padding: 3px 10px !important;
     }
 }
 
@@ -13,8 +17,8 @@
         height: 10% !important;
     }
 
-    .cartLink {
+    #cartLink {
         position: relative !important;
-        top: -70px !important;
+        /* top: -70px !important; */
     }
 }

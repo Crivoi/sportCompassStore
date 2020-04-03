@@ -153,6 +153,7 @@
 
     #removeBtn {
         right: 0% !important;
+        margin: 0px 5px;
     }
 
     #searchBtn {
