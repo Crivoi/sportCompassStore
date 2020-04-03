@@ -58,7 +58,7 @@ const vinylsContainerStyle = {
   paddingBottom: '2em',
   border: '1px solid #d9d9d9',
   borderRadius: '8px',
-  background: ' #f2f2f2',
+  background: '#f2f2f2',
   gridTemplateColumns: '1fr 1fr 1fr 1fr',
   top: '100px'
 }
