@@ -8,6 +8,9 @@ In order to run this project you can either download it as a ZIP file directly f
 After that, open a command prompt and navigate to the "sport_compass_store" folder inside the project and run:
  - npm start
 
+For the testing enviroment, inside the same folder, run:
+ - npm run cypress - this should open the **Cypress** interface from which you can select the *sample_spec.js* file and open it, which will begin testing (it may take 45-60 seconds for the test to run for the first time)
+
 If all the requirements in the next section are met, the browser should open up and the store should be visible for you to browse and enjoy.
 
 ## Prerequisites

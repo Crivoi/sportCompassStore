@@ -26,7 +26,7 @@ class CartItem extends Component {
                 </div>
 
                 <button className='appBtn'
-                    id='removeBtn'
+                    id={'removeBtn' + cartID}
                     style={removeBtnStyle} 
                     onClick={this.props.removeVinyl.bind(this, cartID)}
                 >   
@@ -59,7 +59,7 @@ const removeBtnStyle = {
     fontFamily: 'Raleway, sans-serif',
     borderRadius: '8px',
     border: '2px solid #d9d9d9',
-    padding: '5px 5px',
+    padding: '5px',
     float: 'right',
     position: 'relative',
     top: '5.5em',

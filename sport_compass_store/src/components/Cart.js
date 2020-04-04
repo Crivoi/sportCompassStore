@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import CartItem from './CartItem';
 import './default.css'
@@ -9,11 +10,9 @@ class Cart extends Component {
     }
 
     componentDidMount() {
-        // console.log(this.props.cart);
         this.setState({
             cart: this.props.cart
-        });
-        console.log(this.state.cart);
+        })
     }
 
     computeCost = () => {
@@ -24,13 +23,14 @@ class Cart extends Component {
 
     render() {
         return (
-            <div className='cartContainer' style={cartContainerStyle}>
+            <div className='cartContainer' len={this.props.cart.length} style={cartContainerStyle}>
                 {this.state.cart.map(vinyl => (
                     <CartItem key={vinyl.cartID} vinyl={vinyl} removeVinyl={this.props.removeVinyl}/>
                 ))}
                 <div className='checkoutWrapper' style={checkoutWrapperStyle}>
                     <p className='subtotal' >Subtotal: {this.computeCost()}&euro;</p>
                     <button className='appBtn' 
+                        id='checkoutBtn'
                         style={checkoutBtnStyle}
                         onClick={this.props.checkOut}
                     >
@@ -58,11 +58,15 @@ const checkoutBtnStyle = {
     fontFamily: 'Raleway, sans-serif',
     borderRadius: '8px',
     border: '2px solid #d9d9d9',
-    padding: '10px 10px',
+    padding: '10px',
 }
 
 const checkoutWrapperStyle = {
     textAlign: 'center',
+}
+
+Cart.propTypes = {
+    cart: PropTypes.array.isRequired
 }
 
 export default Cart;

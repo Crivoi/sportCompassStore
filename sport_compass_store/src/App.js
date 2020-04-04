@@ -36,7 +36,7 @@ class App extends Component {
         this.setState({
           top: '-100px'
         });
-      }, 1500);
+      }, 1000);
     })
   }
 

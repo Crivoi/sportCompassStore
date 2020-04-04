@@ -5,7 +5,7 @@ import './default.css'
 
 class VinylItem extends Component {
     render() {
-        const { artistName, albumName, artwork } = this.props.vinyl;
+        const { id, artistName, albumName, artwork } = this.props.vinyl;
         const vinylImg = `/img/${artwork}`;
         return (
             <div className='vinylItem' style={vinylStyle}>
@@ -20,7 +20,8 @@ class VinylItem extends Component {
                 <p>
                     {artistName} - {albumName}
                 </p>
-                <button className='appBtn' 
+                <button className='appBtn'
+                    id={ ('addBtn' + id) }
                     style={addToCartBtnStyle}
                     onClick={this.props.addToCart.bind(this, this.props.vinyl)}
                 >
@@ -33,7 +34,7 @@ class VinylItem extends Component {
 
 const vinylStyle = {
     position: 'relative',
-    padding: '30px 10px 10px 10px',
+    padding: '30px 10px 10px',
     textAlign: 'center',
     fontSize: '18px'
 }
@@ -42,7 +43,7 @@ const addToCartBtnStyle = {
     fontFamily: 'Raleway, sans-serif',
     borderRadius: '8px',
     border: '2px solid #d9d9d9',
-    padding: '5px 5px',
+    padding: '5px',
 }
 
 VinylItem.propTypes = {
