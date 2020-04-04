@@ -5,24 +5,18 @@ E-commerce vinyl store for SportCompass Copenhagen internship assignment.
 In order to run this project you can either download it as a ZIP file directly from this repository or, if you have GIT installed on your computer, open a GIT Bash and run:
  - git clone "https://github.com/Crivoi/sportCompassStore.git"
 
-
-
 After that, open a command prompt and navigate to the "sport_compass_store" folder inside the project and run:
- - npm install - this will install all needed dependencies
+ - npm install - this will install all needed dependencies and libraries
 
 You can then run 
  - npm start - to start the app at [localhost:3000](http//localhost:3000)
 
-For the testing enviroment, inside the same folder, but in another command prompt (keep the other one running) run:
+For the testing enviroment, inside the same folder run (while the server is still up):
  - npm run cypress - this should open the **Cypress** interface from which you can select the *sample_spec.js* file and open it, which will begin testing (it may take 45-60 seconds for the test to run for the first time)
-
-If all the requirements in the next section are met, the browser should open up and the store should be visible for you to browse and enjoy.
 
 ## Prerequisites
 For this project to run, you must have Node.js and React installed. You can do this by going to the official [Node.js website](https://nodejs.org/en/), download and install the latest stable version and then, inside a command prompt (or terminal for MacOS and Linux) run:
  - node --version (to check if Node.js is installed correctly)
- - npm install react
- - npm install react-dom
 
 ## Features
  - view store items
